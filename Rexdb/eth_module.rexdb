@@ -1,0 +1,1 @@
+eth,m,Eth-Trunk(?<eth>[0-9]*)\s*up\s*up\s*(?<in_rate>[0-9]*\.[0-9]*)%\s*(?<out_rate>[0-9]*\.[0-9]*)%\s*(?<iError>\d*)\s*(?<oError>\d*)$

@@ -1,0 +1,11 @@
+lag,1,^interface\s*(?<lag>(Eth-Trunk\d*))$
+portswitch,1,\s*(?<portswitch>undo)\sportswitch
+link_type,1,\s*port\s*link\-type\s*(?<link_type>\w*)
+deny_vlan,1,^\s*undo\s*port\s*trunk\s*allow\-pass\s*vlan\s*(?<deny_vlan>(([0-9]*)|\s|to)*)$
+allow_vlan,1,^\s*port\s*trunk\s*allow\-pass\s*vlan\s*(?<allow_vlan>(([0-9]*)|\s|to)*)$
+lacp,1,\s*mode\s*lacp\-(?<lacp>\w*)
+mlag_id,1,^\s*dfs\-group\s*1\s*m\-lag\s*(?<mlag_id>\d*)$
+mlag_priority,1,\s*lacp\s*m\-lag\s*priority\s*(?<mlag_priority>\d*)
+mlag_sys_mac,1,\s*lacp\s*m\-lag\s*system\-id\s*(?<mlag_sys_mac>(([a-zA-Z0-9]){4}\-){2}([a-z0-9]){4})$
+peer_link,1,\s*(?<peer_link>peer\-link)\s*1
+description,1,\s*description\s*(?<description>([a-zA-Z0-9]|_|\-|\&|(\s\w))+)$

@@ -1,0 +1,4 @@
+peer_ip,n,^\speer\s*(?<peer_ip>(\d*\.){3}\d*)\s*as\-number\s*\d*,line
+peer_as,n,^\speer\s*(\d*\.){3}\d*\s*as\-number\s*(?<peer_as>(\d|\.)*),line
+peer_des,n,^\speer\s*(\d*\.){3}\d*\s*description\s*(?<peer_des>([0-9]|-|[a-zA-Z]|&|_|\.)*),line
+peer_group,n,^\speer\s*(?<peer_ip>(\d*\.){3}\d*)\s*group\s*(?<peer_group>([a-zA-Z0-9]|_|\-)*),line

@@ -1,0 +1,3 @@
+Routing_table,n,Routing\sTable\s\:\s(?<Routing_table>([0-9a-zA-Z]|_|\-)*),line
+des,n,\s*Destinations\s\:\s(?<des>\d*)\s*Routes\s\:\s(?<routes>\d*)\s*,line
+routes,n,\s*Destinations\s\:\s(?<des>\d*)\s*Routes\s\:\s(?<routes>\d*)\s*,line

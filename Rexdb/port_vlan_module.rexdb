@@ -1,0 +1,14 @@
+bd,1,\s*bridge-domain\s(?<bd>\d*)$
+b_cir,1,\s*storm\s*suppression\s*broadcast\s*access\s*cir\s*(?<b_cir>\d*)\s*kbps
+m_cir,1,\s*storm\s*suppression\s*multicast\s*cir\s*(?<m_cir>\d*)\s*kbps
+u_cir,1,\s*storm\s*suppression\s*unknown-unicast\s*cir\s*(?<u_cir>\d*)\s*kbps
+l2_vni,1,\s*vxlan\s*vni\s*(?<l2_vni>\d*)
+arp_spps,1,\s*arp\s*broadcast-suppress\s*(?<arp_spps>enable)
+arp_proxy,1,\s*(?<arp_proxy>l2-proxy)\s*gateway-mac
+rd,1,\s*route-distinguisher\s*(?<rd>([0-9]|:|\.)*)
+ert,n,\s*vpn-target\s*(?<ert>([0-9]|:|\.)*)\s*export-extcommunity
+irt,n,\s*vpn-target\s*(?<irt>([0-9]|:|\.)*)\s*import-extcommunity
+mac_no_addvirce,1,\s*mac-route\s(?<mac_no_addvirce>no-advertise)
+interface,1,interface\s*(?<interface>(Eth-Trunk\d*\.\d*)|(\d*GE\d*\/\d*\/\d*\.\d*))\s*mode\s*l2
+tag,1,\s*encapsulation\s*(dot1q\s*vid)?\s*(?<tag>untag|[0-9]*)
+bd_port,1,\s*bridge-domain\s(?<bd_port>\d*),h

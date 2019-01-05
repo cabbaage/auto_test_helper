@@ -1,0 +1,5 @@
+underlay,1,
+sysname,1,(sysname\s(?<sysname>([0-9]|-|[a-zA-Z]|&|_|\.)*))
+version,1,^\!Software\s*Version\s*(?<version>V\d*R\d*C\d*SPC\d*)
+device,n,^device\s*board\s*\d*\s*board\-type\s*(?<device>([0-9]|-|[a-zA-Z]|&|_|\.)*)
+resourece,1,^system\s*resource\s*(?<resourece>\w*)

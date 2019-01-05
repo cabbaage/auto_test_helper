@@ -1,0 +1,1 @@
+version,1,^\!Software\s*Version\s*(?<version>[a-zA-Z0-9]*)

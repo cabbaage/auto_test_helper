@@ -1,0 +1,3 @@
+dfs,1,^dfs-group\s*(?<dfs>\d*)
+dfs-priority,1,\s*priority\s*(?<dfs-priority>\d+)
+dfs-source,1,\s*source\s*ip\s*(?<dfs-source>\d*\.\d*\.\d*\.\d*)

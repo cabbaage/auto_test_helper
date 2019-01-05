@@ -1,0 +1,12 @@
+interface,1,interface\s*(?<interface>(Eth-Trunk\d*)|(?<interface>\d*GE\d*\/\d*\/\d*)|(?<interface>\d*GE\d*\/\d*\/\d*\/\d*))
+status,1,\s*(?<status>shutdown)
+lag,1,^\s*eth\-trunk\s*(?<lag>\d*)
+l3_enable,1,\s*(?<l3_enable>undo portswitch)
+l2_mode,1,\s*port\s*link\-type\s*(?<l2_mode>\w*)
+vlan_untag,1,\s*port\s*default\s*vlan\s*(?<vlan_untag>\d*)
+deny_vlan,1,^\s*undo\s*port\s*trunk\s*allow\-pass\s*vlan\s*(?<deny_vlan>(([0-9]*)|\s|to)*)$
+allow_vlan,1,^\s*port\s*trunk\s*allow\-pass\s*vlan\s*(?<allow_vlan>(([0-9]*)|\s|to)*)$
+MQC_type,1,^\s*traffic\-(?<MQC_type>(\w|_|:|\s|\-)*)
+MQC_name,1,^\s*traffic\-(?<MQC_name>(\w|_|:|\s|\-)*)\s*(?<MQC_name>([a-zA-Z0-9]|_)*)
+MQC_direction,1,^\s*traffic\-(?<MQC_name>(\w|_|:|\s|\-)*)\s*(?<MQC_name>([a-zA-Z0-9]|_)*)\s*(?<MQC_direction>\w*)
+description,1,\s*description\s*(?<description>([a-zA-Z0-9]|_|\-|\&|(\s\w))+)$

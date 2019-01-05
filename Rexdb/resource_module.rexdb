@@ -1,0 +1,1 @@
+resource,1,^system\s*resource\s*(?<resource>\w*\-?\w*)

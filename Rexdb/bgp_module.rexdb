@@ -1,0 +1,5 @@
+bgp,1,^bgp\s*(?<bgp>(\d|\.)*)$
+router_id,1,\s*router\-id\s*(?<router_id>(\d*\.){3}\d*)
+group_name,n,^\s*group\s*(?<group_name>([a-zA-Z0-9]|_|-)*)\s*\w*
+group_eibgp,n,^\s*group\s*\w*\s*(?<group_eibgp>\w*)
+group_as,n,^\s*peer\s\w*\s*as\-number\s*(?<group_as>\d*)

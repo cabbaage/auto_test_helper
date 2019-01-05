@@ -1,0 +1,1 @@
+vlan_batch,n,^vlan\s*batch\s*(?<vlan_batch>(\d*|\s|to)*)$

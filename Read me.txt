@@ -1,0 +1,35 @@
+Suggestion begin:
+
+require "Pathname"
+$main_file_name = __FILE__
+$path_this = Pathname.new(File.dirname(__FILE__)).realpath
+load "#{$path_this}/Bin/LinktoMe.rb"
+
+##############################################################
+Folder:
+-Bin
+-Configure
+|-source
+|-temporary
+-Log
+|-source
+|-temporary
+-App
+|-Cfg_module
+|-Output
+-Output
+
+
+##############################################################
+about Reg_db
+name(tag),Type to match,Reg_Exp(with this tag)
+##############################################################
+#Overlay_output:
+@output_file_name = "Overlay_#{Time.now.mon}_#{Time.now.day}"
+@module_to_any = ["l2sub_interface","bd","vbdif","vpn","ip_int"]
+
+
+##############################################################
+#Underlay_output:
+@output_file_name = "underlay_#{Time.now.mon}_#{Time.now.day}"
+@module_to_any = ["version","device","resource","bgp"]

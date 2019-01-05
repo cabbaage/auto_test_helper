@@ -1,0 +1,8 @@
+ip_int,1,\s*ip\s*address\s*(?<ip_int>(\d*\.){3}\d*)\s*(\d*\.){3}\d*
+ip_mash,1,\s*ip\s*address\s*(\d*\.){3}\d*\s*(?<ip_mash>(\d*\.){3}\d*)
+ip_int_sub,1,\s*ip\s*address\s*(?<ip_int>(\d*\.){3}\d*)\s*(\d*\.){3}\d*sub
+ip_mash_sub,1,\s*ip\s*address\s*(\d*\.){3}\d*\s*(?<ip_mash>(\d*\.){3}\d*)sub
+interface_name,1,interface\s*(?<interface_name>(Eth-Trunk\d*\.\d*)|(vlanif\d*)|(vbdif\d*)|(\d*GE\d*\/\d*\/\d*\.\d*)|(\d*GE\d*\/\d*\/\d*)|(Eth-Trunk\d*)|(LoopBack\d*)|(Nve\d*)|(MEth0\/0\/0)|(MEth0\/0\/0\/0))
+vpn,1,\s*ip\s*binding\s*vpn-instance\s*(?<vpn>([0-9a-zA-Z]|_|\-)*)
+description,1,^\s*description\s*(?<description>([a-zA-Z0-9]|_|\-|\&|(\s\w))+)$
+status,1,\s*(?<status>shutdown)

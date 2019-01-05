@@ -1,0 +1,9 @@
+vrrp,1,^\s*vrrp\s*vrid\s*(?<vrrp>\d*)\s*virtual\-ip\s*(\d*\.){3}\d*$
+vrrp_ip,1,^\s*vrrp\s*vrid\s*\d*\s*virtual\-ip\s*(?<vrrp_ip>(\d*\.){3}\d*)$
+interface,1,^interface\s*(?<interface>([a-zA-Z0-9]|\-)*)
+vrrp_pri,1,^\s*vrrp\s*vrid\s*\d*\s*priority\s*(?<vrrp_pri>\d*)
+ip_int,1,\s*ip\s*address\s*(?<ip_int>(\d*\.){3}\d*)\s*(\d*\.){3}\d*
+ip_mash,1,\s*ip\s*address\s*(\d*\.){3}\d*\s*(?<ip_mash>(\d*\.){3}\d*)
+vpn,1,\s*ip\s*binding\s*vpn-instance\s*(?<vpn>([0-9a-zA-Z]|_|\-)*)
+description,1,^\s*description\s*(?<description>([a-zA-Z0-9]|_|\-|\&|(\s\w))+)$
+status,1,\s*(?<status>shutdown)

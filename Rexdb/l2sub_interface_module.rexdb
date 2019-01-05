@@ -1,0 +1,4 @@
+l2sub_interface,1,interface\s*(?<l2sub_interface>(Eth-Trunk\d*\.\d*)|(\d*GE\d*\/\d*\/\d*\.\d*))\s*mode\s*l2
+status,1,\s*(?<status>shutdown)
+tag,1,\s*encapsulation\s*(dot1q\s*vid)?\s*(?<tag>untag|[0-9]*)
+bd_port,1,\s*bridge-domain\s(?<bd_port>\d*)

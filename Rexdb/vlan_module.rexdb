@@ -1,0 +1,2 @@
+vlan,1,^vlan\s*(?<vlan>\d*)
+description,1,^\s*description\s*(?<description>([a-zA-Z0-9]|_|\-|\&|(\s\w))+)$

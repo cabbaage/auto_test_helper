@@ -1,0 +1,7 @@
+vpn,1,ip\s*vpn-instance\s*(?<vpn>([0-9a-zA-Z]|_|\-)*)$
+rd,1,route-distinguisher\s*(?<rd>([0-9]|:|\.)*)
+ert,n,vpn-target\s*(?<ert>([0-9]|:|\.)*)\s*export-extcommunity$
+evpn_ert,n,vpn-target\s*(?<evpn_ert>([0-9]|:|\.)*)\s*export-extcommunity\s*evpn
+irt,n,vpn-target\s+(?<irt>([0-9]|:|\.)*)\s+import-extcommunity$
+evpn_irt,n,vpn-target\s*(?<evpn_irt>([0-9]|:|\.)*)\s*import-extcommunity\s*evpn
+l3vni,1,vxlan\s*vni\s*(?<l3vni>\d*)

@@ -1,0 +1,1 @@
+sysname,1,(sysname\s(?<sysname>([0-9]|-|[a-zA-Z]|&|_|\.)*))

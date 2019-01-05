@@ -1,0 +1,1 @@
+device,n,^device\s*board\s*\d*\s*board\-type\s*(?<device>([0-9]|-|[a-zA-Z]|&|_|\.)*)

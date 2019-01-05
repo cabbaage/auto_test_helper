@@ -1,0 +1,6 @@
+vbdif,1,interface\s*Vbdif(?<vbdif>\d*)$
+vpn_binding,1,\s*ip\s*binding\s*vpn-instance\s*(?<vpn_binding>([0-9a-zA-Z]|_|\-)*)$
+gw_ip,n,\sip\saddress\s(?<gw_ip>\d*\.\d*\.\d*\.\d*\s*\d*\.\d*\.\d*\.\d*)(\s*sub)?$
+arp_dis,1,\s*arp\s*distribute-gateway\s*(?<arp_dis>enable)$
+gw_mac,1,\s*mac-address\s*(?<gw_mac>(\w*)-(\w*)-(\w*))
+distribute_switch,1,\s*arp\s*collect\s*host\s*(?<distribute_switch>enable)$
